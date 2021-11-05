@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.g-container {
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media (min-width: 576px) {
+  .g-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .g-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .g-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .g-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .g-container {
+    max-width: 1320px;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: #11101d;
+  -webkit-box-shadow: 0 6px 6px -7px #11101d;
+          box-shadow: 0 6px 6px -7px #11101d;
+  padding: 7px 0 8px;
+}
+
+header .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-wrapper .navbar-logo a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+header .nav-wrapper .nav-btn {
+  display: none;
+}
+
+header .nav-wrapper nav ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-wrapper nav ul li {
+  margin: 0 4px;
+}
+
+header .nav-wrapper nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+header .nav-wrapper nav ul li a.active, header .nav-wrapper nav ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav-wrapper .nav-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  header .nav-wrapper .nav-btn span {
+    background-color: #fff;
+    width: 22px;
+    height: 3px;
+    margin: 2px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .nav-wrapper .nav-btn span:nth-child(2) {
+    width: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  header .nav-wrapper .nav-btn.active {
+    height: 30px;
+  }
+  header .nav-wrapper .nav-btn.active span {
+    background-color: #f12525;
+    margin: -1px auto;
+    border-radius: 10px;
+  }
+  header .nav-wrapper .nav-btn.active span:first-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .nav-wrapper .nav-btn.active span:nth-child(2) {
+    display: none;
+  }
+  header .nav-wrapper .nav-btn.active span:last-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .nav-wrapper nav {
+    position: fixed;
+    top: 45px;
+    left: -200%;
+    width: 250px;
+    height: calc(100vh - 45px);
+    -webkit-box-shadow: 6px 0 6px -8px #555;
+            box-shadow: 6px 0 6px -8px #555;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 555;
+  }
+  header .nav-wrapper nav.active {
+    left: 0;
+  }
+  header .nav-wrapper nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 5px;
+  }
+  header .nav-wrapper nav ul li {
+    margin: 2px 0;
+    width: 100%;
+  }
+  header .nav-wrapper nav ul li a {
+    color: #000;
+    display: block;
+    padding: 12px 20px;
+  }
+  header .nav-wrapper nav ul li a.active, header .nav-wrapper nav ul li a:hover {
+    background-color: #11101d;
+    color: #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
