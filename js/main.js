@@ -23,7 +23,7 @@ navBtn.addEventListener("click", () => {
 
 // when you click outside navbar, and navbar toggle button remove class active
 
-// const html = document.querySelector("html");
+const html = document.querySelector("html");
 
 // html.addEventListener("click", (e) => {
 //   const navBtnRemove = e.target.closest(".nav-btn");
